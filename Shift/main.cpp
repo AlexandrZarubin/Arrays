@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 
 using namespace std;
 
@@ -8,17 +8,17 @@ void main()
 	setlocale(LC_ALL, "rus");
 	
 	int NumberA = 10, NumberB = 45;
-	cout << "×èñëî À " << NumberA << "\t" << "×èñëî Â " << NumberB << "\n";
+	cout << "Ð§Ð¸ÑÐ»Ð¾ Ð " << NumberA << "\t" << "Ð§Ð¸ÑÐ»Ð¾ Ð’ " << NumberB << "\n";
 	NumberA ^= NumberB;
 	NumberB ^= NumberA;
 	NumberA ^= NumberB;
-	cout <<"×èñëî À "<< NumberA << "\t" <<"×èñëî Â " << NumberB << "\n";
+	cout <<"Ð§Ð¸ÑÐ»Ð¾ Ð "<< NumberA << "\t" <<"Ð§Ð¸ÑÐ»Ð¾ Ð’ " << NumberB << "\n";
 	
 	
 	int a = 0, b = 1, c = 0;
 	const int size = 10;
 	int Array[size]{};
-	//çàïîëíåíìå ìàññèâà
+	//Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¼Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°
 	for (int i = 0; i < size; i++)
 	{
 		Array[i] = c;
@@ -27,24 +27,25 @@ void main()
 		c = a + b;
 		
 	}
-	//Âûâîä ìàññèâà
+	//Ð’Ñ‹Ð²Ð¾Ð´ Ð¼Ð°ÑÑÐ¸Ð²Ð°
 	for (int i = 0; i < size; i++)
 	{
 		cout << Array[i] << "\t";
 	}
 	cout << endl;
-	//Ñìåùåíèå ìàññèâà
+	//Ð¡Ð¼ÐµÑ‰ÐµÐ½Ð¸Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°
 	int Shift = 0;
-	cout << "Ââåäèòå íà ñêîëêü ñìåñòèòü ìàññèâ âëåâî "; cin >> Shift;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð° ÑÐºÐ¾Ð»ÐºÑŒ ÑÐ¼ÐµÑÑ‚Ð¸Ñ‚ÑŒ Ð¼Ð°ÑÑÐ¸Ð² Ð²Ð»ÐµÐ²Ð¾ "; cin >> Shift;
 	for (int i = 0; i < Shift; i++)
 	{
 		
-		/*int FirstElement = Array[0];
+		/*
+		int FirstElement = Array[0];
 		for (int j = 0; j < size-1; j++)
 		{
 			Array[j] = Array[j + 1];
 		}
-		Array[size - 1] = FirstElement;//Ñòàâèì ïåðâûé ýëåìåíò â ñàìû êîíåö
+		Array[size - 1] = FirstElement;//Ð¡Ñ‚Ð°Ð²Ð¸Ð¼ Ð¿ÐµÑ€Ð²Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð² ÑÐ°Ð¼Ñ‹ ÐºÐ¾Ð½ÐµÑ†
 		*/
 		
 		for (int j = 0; j < size-1 ; j++)
@@ -54,7 +55,7 @@ void main()
 			Array[j] ^= Array[j + 1];
 		}
 		
-		//Âûâîä êàæäûé ðàç ìàññèâà
+		//Ð’Ñ‹Ð²Ð¾Ð´ ÐºÐ°Ð¶Ð´Ñ‹Ð¹ Ñ€Ð°Ð· Ð¼Ð°ÑÑÐ¸Ð²Ð°
 		for (int k = 0; k < size; k++)
 		{
 			cout << Array[k] << "\t";
